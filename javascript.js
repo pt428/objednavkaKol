@@ -52,15 +52,15 @@ function spocitat() {
   maxCena = document.querySelector("#suma").value;
 
   // navrh celkove castky vyhovuje/nevyhovuje
+  const rozdilCeny =document.querySelector("#lblRozdil")
   if (maxCena - celkovaCena >= 0) {
-    document.querySelector("#lblRozdil").setAttribute("style", "color:green");
-    document.querySelector("#lblRozdil").textContent =
+     
+    rozdilCeny.setAttribute("style", "color:green");
+    rozdilCeny.textContent =
       "Navrhovaná částka je dostačující";
   } else {
-    document.querySelector("#lblRozdil").setAttribute("style", "color:red");
-    document.querySelector(
-      "#lblRozdil"
-    ).textContent = ` Navrhovaná částka není dostačující `;
+    rozdilCeny.setAttribute("style", "color:red");
+    rozdilCeny.textContent = ` Navrhovaná částka není dostačující `;
   }
 }
 
