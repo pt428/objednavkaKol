@@ -1,0 +1,11 @@
+body{
+    margin: 0 auto;
+    width: 500px;
+    
+}
+.cont{
+    width: 500px;
+    background-color: antiquewhite;
+    padding: 2rem;
+    margin-top: 1rem;
+}

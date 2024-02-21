@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="cont">
+<h1>Objednávkový list</h1>
+<h2>Vyberte typ kola</h2>
+<input type="checkbox" name="chb-1" id="chb-1">
+<label for="chb-1">horské 500Kč/den</label>
+<input type="number" name="input-horske" id="input-horske" value="1"><br>
+<input type="checkbox" name="chb-2" id="chb-2">
+<label for="chb-2">dětské 200Kč/den</label>
+<input type="number" name="input-detské" id="input-detske" value="1"><br>
+<input type="checkbox" name="chb-3" id="chb-3">
+<label for="chb-3">silniční 1500Kč/den</label>
+<input type="number" name="input-silnicni" id="input-silnicni" value="1"><br>
+<input type="checkbox" name="chb-4" id="chb-4">
+<label for="chb-4">gravel 2500Kč/den</label>
+<input type="number" name="input-gravel" id="input-gravel" value="1"><br>
+<hr>
+<h2>Počet dni k zapůjčení</h2>
+<select name="select" id="select">
+    <option value="den1">1 den</option>
+    <option value="den5">5 dní</option>
+    <option value="tyden">týden</option>
+    <option value="mesic">mesic</option>
+</select>
+<hr>
+<h2>Cyklonosič</h2>
+<input type="radio" name="radio" id="radio-1">
+<label for="radio-1">cyklonosič střešní (+ 5 procent z celkové ceny zápůjčky navíc)</label><br>
+<input type="radio" name="radio" id="radio-2">
+<label for="radio-2">cyklonosič na tažné zařízení (+ 10 procent z celkové ceny zápůjčky navíc)</label><br>
+<input type="radio" name="radio" id="radio-3" checked>
+<label for="radio-3">není třeba cyklonosič</label><br>
+
+
+<hr>
+<label for="cena"><h2 style="color:red">Celková cena</h2></label> 
+<input type="text" name="cena" id="cena"><br>
+<button
+onclick="spocitat()"
+>Spočítat</button><br><br>
+
+
+<hr>
+<label for="suma"><h3>Navrh celkové částky</h3></label> 
+<input type="text" name="suma" id="suma" value="0"><br>
+<div id="lblRozdil"  >xcvyvxcvyx</div>
+ 
+<hr>
+<label for="email">Zadejte email</label><br>
+ <input oninput="odeslat() " type="email" id="email"><br>
+ <button 
+ id="btn"
+  
+ disabled
+ >odeslat</button>
+    </div>
+    <script></script>
+    <script src="./javascript.js"></script>
+  </body>
+</html>
